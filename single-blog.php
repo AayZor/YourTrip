@@ -79,10 +79,10 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="tour_details1.php">Tour Details</a>
                                     </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="index.php">Log Out</a>
+                                     <li class="nav-item">
+                                        <a class="nav-link" href="logout.php">Log Out</a>
                                     </li>
+                               
                                 </ul>
                             </div>
                         </nav>
@@ -330,7 +330,28 @@
                             </form>
                             <hr>
                             <div class="form-group">
-                            <button type="submit" class="button rounded-0 primary-bg text-white w-100 btn_1"><a href = "main.php">Upload </a></button>
+                            <button type="submit" class="button rounded-0 primary-bg text-white w-100 btn_1" data-toggle="modal" data-target="#myModal"><a href = "main.php">Upload </a></button>
+                        </div>
+                        <!-- Modal -->
+                          <!-- Modal HTML -->
+                        <div id="myModal" class="modal fade" tabindex="1"
+                             style="margin-top: 100px;  ">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Confirmation</h5>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>Do you want to save changes to this document before closing?</p>
+                                        <p class="text-secondary"><small>If you don't save, your changes will be lost.</small></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Select file</button>
+                                        <button type="button" class="btn btn-primary">Upload</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         </aside>
                         <aside class="single_sidebar_widget post_category_widget">
@@ -570,6 +591,7 @@
     <script src="js/contact.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
+    <script>	
 </body>
 
 </html>
