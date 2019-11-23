@@ -1,4 +1,4 @@
-<!doctype html>
+ <!doctype html>
 <html lang="en">
 
 <head>
@@ -81,7 +81,7 @@
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="index.php">Log Out</a>
+                                        <a class="nav-link" href="index.php" onclick="logout()">Log Out</a>
                                     </li>
                                 </ul>
                             </div>
@@ -91,6 +91,22 @@
             </div>
         </div>
     </header>
+	<script>
+	function logout()
+	{
+		<?php
+		$con=mysqli_connect("localhost","root","AayusH@2612","USER");
+        if(!$con)
+            die("C1" . mysqli_connect_error());
+			$sql="update profile where set status=0 where status=1";
+	$q=mysqli_query($con, $sql);
+if(!$q)
+    die("C3" . mysqli_error($con));
+	mysqli_free_result($q);
+	mysqli_close($con);
+		?>
+	}
+	</script>	
     <!-- Header part end-->
 
     <!-- breadcrumb start-->

@@ -36,7 +36,6 @@ if ($uploadOk == 0) {
     if(!$con)
         die("C1" . mysqli_connect_error());
 	$sql="select user_id from profile where status=1";
-    }
 	$q=mysqli_query($con, $sql);
 if(!$q)
     die("C3" . mysqli_error($con));
@@ -48,5 +47,6 @@ if(!$q)
 if(!$q)
     die("C3" . mysqli_error($con));
 mysqli_close($con);
+}
 }
 ?>
