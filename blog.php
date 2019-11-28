@@ -128,8 +128,8 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
-                                    <h2>Google inks pact for new 35-storey office</h2>
+                                <a class="d-inline-block" href="blogofuser.php">
+                                    <h2>My Travel to Naini</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
                                     he earth it first without heaven in place seed it second morning saying.</p>
@@ -172,7 +172,7 @@
                             </div>
 
                             <div class="blog_details">
-                                <a class="d-inline-block" href="single-blog.html">
+                                <a class="d-inline-block" href="blogofuser.php">
                                     <h2>Google inks pact for new 35-storey office</h2>
                                 </a>
                                 <p>That dominion stars lights dominion divide years for fourth have don't stars is that
